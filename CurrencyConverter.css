@@ -1,0 +1,104 @@
+:root {
+  --cc-bg: #f4f6ff;
+  --cc-title: #4747d1;
+  --cc-input-bg: #fff;
+  --cc-input-border: #bdbddb;
+  --cc-arrow: #4747d1;
+  --cc-btn-bg: linear-gradient(90deg,#4747d1 70%, #7070e0 100%);
+  --cc-btn-bg-hover: linear-gradient(90deg,#39396c 70%, #5a5ac9 100%);
+  --cc-btn-text: #fff;
+  --cc-result-bg: #e3eafc;
+  --cc-result-text: #272765;
+  --cc-result-value: #208549;
+}
+
+.dark-mode {
+  --cc-bg: #232446;
+  --cc-title: #a6bcff;
+  --cc-input-bg: #18192b;
+  --cc-input-border: #31336b;
+  --cc-arrow: #a6bcff;
+  --cc-btn-bg: linear-gradient(90deg,#3b3b90 70%, #5353aa 100%);
+  --cc-btn-bg-hover: linear-gradient(90deg,#222247 70%, #35357a 100%);
+  --cc-btn-text: #fff;
+  --cc-result-bg: #18192b;
+  --cc-result-text: #a6bcff;
+  --cc-result-value: #36de8a;
+}
+
+.currency-converter-form {
+  margin-top: 2.3rem;
+  background: var(--cc-bg);
+  border-radius: 10px;
+  padding: 1.8rem 1.2rem;
+  box-shadow: 0 2px 12px rgba(44,44,139,0.09);
+  transition: background 0.3s, color 0.3s;
+}
+
+.currency-converter-title {
+  color: var(--cc-title);
+  margin-bottom: 1.4rem;
+  font-weight: 600;
+  font-size: 1.18rem;
+}
+
+.currency-converter-row {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 1.2rem;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.currency-converter-input,
+.currency-converter-select {
+  padding: 0.55rem;
+  border-radius: 7px;
+  border: 1px solid var(--cc-input-border);
+  font-size: 1rem;
+  background: var(--cc-input-bg);
+  color: inherit;
+  transition: background 0.2s, border 0.2s;
+}
+
+.currency-converter-input {
+  width: 120px;
+}
+
+.currency-converter-arrow {
+  font-weight: bold;
+  font-size: 1.25rem;
+  color: var(--cc-arrow);
+}
+
+.currency-converter-button {
+  background: var(--cc-btn-bg);
+  color: var(--cc-btn-text);
+  border: none;
+  padding: 0.7rem 1.2rem;
+  border-radius: 7px;
+  font-weight: 600;
+  font-size: 1.07rem;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(44,44,139,0.08);
+  transition: background 0.18s;
+}
+.currency-converter-button:hover {
+  background: var(--cc-btn-bg-hover);
+}
+
+.currency-converter-result {
+  margin-top: 1.5rem;
+  font-size: 1.18rem;
+  color: var(--cc-result-text);
+  background: var(--cc-result-bg);
+  border-radius: 7px;
+  padding: 0.8rem;
+  font-weight: bold;
+  box-shadow: 0 2px 4px rgba(44,44,139,0.06);
+}
+
+.currency-converter-result-value {
+  color: var(--cc-result-value);
+}
