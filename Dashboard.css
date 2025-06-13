@@ -1,0 +1,83 @@
+:root {
+  --dashboard-bg: linear-gradient(120deg, #e3eafc 60%, #f8fafd 100%);
+  --dashboard-text: #4747d1;
+  --dashboard-box-shadow: 0 8px 36px rgba(44, 44, 139, 0.15);
+  --dashboard-header: #4747d1;
+  --dashboard-logout-bg: linear-gradient(90deg,#4747d1 70%, #7070e0 100%);
+  --dashboard-logout-bg-hover: linear-gradient(90deg,#39396c 70%, #5a5ac9 100%);
+  --dashboard-logout-text: #fff;
+}
+
+.dark-mode {
+  --dashboard-bg: linear-gradient(120deg, #232446 60%, #1b1c2b 100%);
+  --dashboard-text: #d6e2ff;
+  --dashboard-box-shadow: 0 8px 36px rgba(22, 22, 44, 0.23);
+  --dashboard-header: #a6bcff;
+  --dashboard-logout-bg: linear-gradient(90deg,#3b3b90 70%, #5353aa 100%);
+  --dashboard-logout-bg-hover: linear-gradient(90deg,#222247 70%, #35357a 100%);
+  --dashboard-logout-text: #fff;
+}
+
+.dashboard-container {
+  max-width: 440px;
+  margin: 48px auto;
+  padding: 2.8rem 2.2rem 2rem 2.2rem;
+  background: var(--dashboard-bg);
+  border-radius: 16px;
+  box-shadow: var(--dashboard-box-shadow);
+  text-align: center;
+  color: var(--dashboard-text);
+  transition: background 0.3s, color 0.3s;
+}
+
+.dashboard-header {
+  margin-bottom: 1.8rem;
+}
+
+.dashboard-header h2 {
+  color: var(--dashboard-header);
+  margin-bottom: 0.7rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.logout-btn {
+  background: var(--dashboard-logout-bg);
+  color: var(--dashboard-logout-text);
+  border: none;
+  padding: 0.75rem 1.6rem;
+  border-radius: 7px;
+  font-size: 1.05rem;
+  margin-bottom: 1.7rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background 0.18s, transform 0.12s;
+  box-shadow: 0 2px 8px rgba(44,44,139,0.06);
+}
+.logout-btn:hover {
+  background: var(--dashboard-logout-bg-hover);
+  transform: translateY(-1px) scale(1.04);
+}
+
+.dark-toggle-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  background: none;
+  border: none;
+  color: var(--dashboard-header);
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.2s;
+}
+
+@media (max-width: 600px) {
+  .dashboard-container {
+    padding: 1.3rem 0.5rem;
+  }
+  .dark-toggle-btn {
+    top: 12px;
+    right: 12px;
+  }
+}
